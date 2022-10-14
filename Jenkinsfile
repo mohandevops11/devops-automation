@@ -14,7 +14,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build -t javatechie/devops-integration .'
+                    sh 'docker build -t mohandevops111/devops-integration .'
                 }
             }
         }
@@ -25,7 +25,7 @@ pipeline {
                    sh 'docker login -u mohandevops111 -p ${dockerhubpwd}'
 
 }
-                   sh 'docker push javatechie/devops-integration'
+                   sh 'docker push mohandevops111/devops-integration'
                 }
             }
         }
